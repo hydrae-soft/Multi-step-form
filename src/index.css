@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --color-marine-blue: 213deg 96% 18%;
+    --color-purplish-blue: 243deg 100% 62%;
+    --color-pastel-blue: 228deg 100% 84%;
+    --color-light-blue: 206deg 94% 87%;
+    --color-strawberry-red: 354deg 84% 57%;
+
+    --color-cool-gray: 231deg 11% 63%;
+    --color-light-gray: 229deg 24% 87%;
+    --color-magnolia: 217deg 100% 97%;
+    --color-alabaster: 231deg 100% 99%;
+    --color-white: 0deg 0% 100%;
+  }
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+#root {
+  @apply grid grid-cols-1 grid-rows-3 h-full bg-magnolia;
+}
+.set-gap {
+  gap: 20px;
+}
